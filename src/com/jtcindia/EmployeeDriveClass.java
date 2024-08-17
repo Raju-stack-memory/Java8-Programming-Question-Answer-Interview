@@ -29,7 +29,6 @@ public class EmployeeDriveClass {
         Map<String, Long> maleAndFemaleInOrganazation = employeeList.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
         System.out.println(maleAndFemaleInOrganazation);
 
-
         //Query 3.2 : Print the name of all departments in the organization?
         //Map<String, Set<Employee>> departMentList = employeeList.stream().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.toSet()));
         employeeList.stream().map(Employee::getDepartment).distinct().forEach(System.out::println);

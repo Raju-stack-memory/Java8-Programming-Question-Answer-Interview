@@ -57,6 +57,4 @@ public class FindNthHighestSalary {
                 .collect(Collectors.toList())
                 .get(num - 1);
     }
-
-
 }

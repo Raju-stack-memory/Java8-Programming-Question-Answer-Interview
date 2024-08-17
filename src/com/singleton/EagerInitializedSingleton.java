@@ -3,7 +3,6 @@ package com.singleton;
 public class EagerInitializedSingleton {
     //1. Eager initialization
     private static final EagerInitializedSingleton instance = new EagerInitializedSingleton();
-    ;
 
     private EagerInitializedSingleton() {
         System.out.println("private constructor");
